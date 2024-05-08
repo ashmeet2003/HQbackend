@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "9d23c0da-43e7-4bb0-9c80-d27b19762734",
+		"name": "messages",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34775258"
+	},
+	"item": [
+		{
+			"name": "send message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\":\"hello, it's ash\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/messages/send/663b608c1d2e2e57224ee578",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"messages",
+						"send",
+						"663b608c1d2e2e57224ee578"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get messages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/messages/663b608c1d2e2e57224ee578",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"messages",
+						"663b608c1d2e2e57224ee578"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
